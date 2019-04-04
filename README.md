@@ -1,7 +1,7 @@
 [Community Calendar for code curious and friends]
 
 
-EPIC 
+EPIC </br>
 A calender where multiple organizations (code curious, heart of code, pyladies,...) can CRUD - create, read, update and delete events and that can be accessed by users who are interested in these events.
 
 
@@ -34,7 +34,7 @@ As a calendar user I want to be able to...
 DEVELOPER STORY
 As developers we want to..
 
--use the rails calendar helper instead of whole APIs to be able to learn more.
+- use the rails calendar helper instead of whole APIs to be able to learn more.
 
 - add the organizors as admin manually instead of setting up a whole log-in-system.
 
