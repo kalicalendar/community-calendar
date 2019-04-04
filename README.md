@@ -2,10 +2,10 @@
 
 
 EPIC </br>
-A calender where multiple organizations (code curious, heart of code, pyladies,...) can CRUD - create, read, update and delete events and that can be accessed by users who are interested in these events.
+A calender where multiple organizations (code curious, heart of code, pyladies,...) can create, read, update and delete events and that can be accessed by users who are interested in these events.
 
 
-ADMIN STORIES </br>
+ADMIN|ORGANIZATION STORIES </br>
 As an organization such as code curious I want to be able to...
 
 - add an event with the following characteristics: date, time, location, title, description, type of event, max. number of participants, public or private, programming language/tags.
@@ -31,12 +31,12 @@ As a calendar user I want to be able to...
 - find short information about the organizations and links to their websites.
 
 
-DEVELOPER STORY </br>
+DEVELOPER STORIES </br>
 As developers we want to..
 
 - use the rails calendar helper instead of whole APIs to be able to learn more.
 
-- add the organizors as admin manually instead of setting up a whole log-in-system.
+- add the organizations as admin manually instead of setting up a whole log-in-system.
 
 
 NEXT STEPS </br>
