@@ -88,7 +88,7 @@ As developers we want to..
 
 5) users of the calendar can read organization profiles. 
 
-6)[add the organizations as admin manually instead of setting up a whole log-in-system.]???
+6) [add the organizations as admin manually instead of setting up a whole log-in-system.]???
 
 ### 3rd Version
 
@@ -108,5 +108,5 @@ As developers we want to..
 ## NEXT STEPS </br>
 
 - think about the database structure and make a drawing.
-- ...?
+- 16. April: break first version down into small tasks (tickets). Decide platform for tickets (Trello?, ...). 
 
