@@ -1,11 +1,11 @@
-#[Community Calendar for code curious and friends]
+# [Community Calendar for code curious and friends]
 
 
 EPIC </br>
 A calendar where multiple organizations (code curious, heart of code, pyladies,...) can create, read, update and delete events and that can be accessed by users who are interested in these events.
 
 
-##ADMIN|ORGANIZATION STORIES </br>
+## ADMIN|ORGANIZATION STORIES </br>
 As an organization such as "Code Curious" I want to be able to...
 
 1) see a calendar.
@@ -34,7 +34,7 @@ As an organization such as "Code Curious" I want to be able to...
 9) I also want that only registered organizations have the power to add, edit and delete events from the calendar.
 
 
-USER STORIES </br>
+## USER STORIES </br>
 As a calendar user I want to be able to...
 
 1) see all the events titles in the calendar: 
@@ -54,7 +54,7 @@ As a calendar user I want to be able to...
 6) find short information about the organizations and links to their websites.
 
 
-DEVELOPER STORIES </br>
+## DEVELOPER STORIES </br>
 As developers we want to..
 
 - use the rails calendar helper instead of whole APIs to be able to learn more.
@@ -62,7 +62,7 @@ As developers we want to..
 - add the organizations as admin manually instead of setting up a whole log-in-system.
 
 
-Minimum Viable Product (MVP) </br>
+## Minimum Viable Product (MVP) </br>
 
 1st Version:
 
