@@ -39,7 +39,18 @@ As developers we want to..
 - add the organizations as admin manually instead of setting up a whole log-in-system.
 
 
+Minimum Viable Product (MVP) </br>
+
+1st Version:
+
+
+
+
 NEXT STEPS </br>
 
 - think about the database structure and make a drawing.
 - ...?
+
+
+* logging in with slack?
+* being able to see a single event
