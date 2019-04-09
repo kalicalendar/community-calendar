@@ -1,34 +1,57 @@
-[Community Calendar for code curious and friends]
+#[Community Calendar for code curious and friends]
 
 
 EPIC </br>
-A calender where multiple organizations (code curious, heart of code, pyladies,...) can create, read, update and delete events and that can be accessed by users who are interested in these events.
+A calendar where multiple organizations (code curious, heart of code, pyladies,...) can create, read, update and delete events and that can be accessed by users who are interested in these events.
 
 
-ADMIN|ORGANIZATION STORIES </br>
-As an organization such as code curious I want to be able to...
+##ADMIN|ORGANIZATION STORIES </br>
+As an organization such as "Code Curious" I want to be able to...
 
-- add an event with the following characteristics: date, time, location, title, description, type of event, max. number of participants, public or private, programming language/tags.
+1) see a calendar.
 
-- edit and delete the event.
+2) create events with the following characteristics: 
+   First priority: date, time, title, description.
+   Second priority: location, tags, "hosted by".   
+   Third priority: type of event, max. number of participants, public or private event.
 
-- see the events in different calendar views: weekly, monthly.
+3) edit created events.
 
-I also want only registered users to be able to manage events.
+4) delete events.
+
+5) see events in different calendar views: 
+    First priority: monthly.
+    Second priority: weekly, year. 
+    
+6) create a profile for the organization with the following characteristics: 
+    First priority: name of the organization, short description, link to the website, a picture.
+    Second priority: list of events added by the organization.
+
+7) edit the profile of the organization. 
+
+8) delete the profile of the organization.
+  
+9) I also want that only registered organizations have the power to add, edit and delete events from the calendar.
 
 
 USER STORIES </br>
 As a calendar user I want to be able to...
 
-- see all the events in different calendar views (weekly and monthly).
+1) see all the events titles in the calendar: 
+    First priority: monthly.
+    Second priority: weekly, year.
+    
+2) click on the events and see the information.
 
-- distinguish between the different organizations by different colours.
+3) distinguish between the different organizations by different colours.
 
-- filter the events by: organization, type of event, time range, programming language.
+4) filter the events by: 
+    First priority: organization.
+    Second priority: type of event. 
 
-- search for events by tags , i.e. "beginners"
+5) search for events by tags , i.e. "beginners" or programming language.
 
-- find short information about the organizations and links to their websites.
+6) find short information about the organizations and links to their websites.
 
 
 DEVELOPER STORIES </br>
