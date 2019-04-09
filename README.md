@@ -109,4 +109,5 @@ As developers we want to..
 
 - think about the database structure and make a drawing.
 - 16. April: break first version down into small tasks (tickets). Decide platform for tickets (Trello?, ...). 
+- Celeste wont be in B from 18.4.-8.5.!
 
