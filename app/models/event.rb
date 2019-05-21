@@ -1,4 +1,5 @@
 class Event < ApplicationRecord
-	 validates :title, :text, presence: true
-	 #start_date, end_date, location, group_id?
+	 validates :title, presence: true
+	 validates :start_time, presence: true
+	 validates :end_time, presence: true
 end
