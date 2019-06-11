@@ -1,19 +1,19 @@
-class EventsController  < ApplicationController
+# frozen_string_literal: true
 
-	def new
-		@event = Event.new
-	end
+# This controlls our events
+class EventsController < ApplicationController
+  def new
+    @event = Event.new
+  end
 
+  def create
+    @event = Event.new(event_params)
 
+    @event.save
+    redirect_to @event
+  end
 
-	def create
- 		@event = Event.new(event_params)
- 
-  		@event.save
-  		redirect_to @event
-	end
-
-	def edit
+  def edit
     @event = Event.find(params[:id])
   end
 
@@ -24,22 +24,16 @@ class EventsController  < ApplicationController
     redirect_to event_path(@event)
   end
 
+  def destroy
+    @event = Event.find(params[:id])
+    @event.destroy
 
-	def destroy
-		@event = Event.find(params[:id])
-		@event.destroy
+    redirect_to events_path
+  end
 
-		redirect_to events_path
-	end
+  private
 
-
-	private
-
-	def event_params
-		params.require(:event).permit(:description)      #richtig?
-	end
-	
-
-
-
+  def event_params
+    params.require(:event).permit(:description) # richtig?
+  end
 end
