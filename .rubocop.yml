@@ -1,0 +1,9 @@
+
+Metrics/LineLength:
+  Max: 115
+
+Style/MixinUsage:
+  Enabled: false
+
+Style/Documentation:
+  Exclude: [config/*, db/**/*, test/*, app/helpers/application_helper.rb, app/models/application_record.rb, app/mailers/application_mailer.rb]
