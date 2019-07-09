@@ -1,1 +1,10 @@
-show single event
+<h1><%= @event.title %></h1>
+  
+  <%= @event.description %>
+  <%= @event.start_time %>
+  <%= @event.end_time %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
