@@ -4,7 +4,7 @@
     <tr>
       <td><%= event.title %></td>
       <td><%= link_to 'Edit', events_path(event) %></td>
-      <td><%= link_to 'Delete', events_path(event), method: :destroy %></td>
+      <td><%= link_to 'Destroy', event, method: :delete %></td>
     </tr>
   <% end %>
 </table>
