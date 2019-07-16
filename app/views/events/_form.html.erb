@@ -1,0 +1,20 @@
+<%= form_with model: @event, local: true do |form| %>
+
+ 
+  <p>  
+    <%= form.label("Title of Event") %><br>
+    <%= form.text_field :title %><br>
+    <%= form.label("Description of Event") %><br>
+    <%= form.text_area :description %><br>
+    <%= form.label("Event begins at") %><br>
+     <%= select_date Date.today, prefix: :start_time %>
+    <%= select_time(Time.now) %><br>
+    <%= form.label("Event ends at") %><br>
+     <%= select_date Date.today, prefix: :end_time %>
+    <%= select_time(Time.now) %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
