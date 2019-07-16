@@ -1,13 +1,11 @@
 <h1>All Events</h1>
 <table>
-  
-
   <% @events.each do |event| %>
     <tr>
-      
       <td><%= event.title %></td>
-      <!-- hinter jedem event: delete button, edit button -->
-      <td><%= link_to 'new event', new_event_path %></td>
+      <td><%= link_to 'Edit', events_path(event) %></td>
+      <td><%= link_to 'Destroy', event, method: :delete %></td>
     </tr>
   <% end %>
 </table>
+<p><%= link_to 'Create new event', new_event_path %></p>
