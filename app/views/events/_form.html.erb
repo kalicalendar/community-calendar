@@ -7,11 +7,9 @@
     <%= form.label("Description of Event") %><br>
     <%= form.text_area :description %><br>
     <%= form.label("Event begins at") %><br>
-     <%= select_date Date.today, prefix: :start_time %>
-    <%= select_time(Time.now) %><br>
+    <%= form.datetime_select :start_time %><br>
     <%= form.label("Event ends at") %><br>
-     <%= select_date Date.today, prefix: :end_time %>
-    <%= select_time(Time.now) %>
+    <%= form.datetime_select :end_time %>
   </p>
  
   <p>
