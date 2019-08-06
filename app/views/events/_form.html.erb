@@ -21,9 +21,9 @@
     <%= form.label("Description of Event") %><br>
     <%= form.text_area :description %><br>
     <%= form.label("Event begins at") %><br>
-    <%= form.datetime_select :start_time %><br>
+    <%= form.datetime_select :start_time, :include_blank => true %><br>
     <%= form.label("Event ends at") %><br>
-    <%= form.datetime_select :end_time %>
+    <%= form.datetime_select :end_time, :include_blank => true %>
   </p>
  
   <p>
