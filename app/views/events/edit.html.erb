@@ -1,3 +1,6 @@
-<h1>Edit your Event!</h1>
-
-<!-- form fuer event editieren
+<div class="container">
+  <h1>Edit your Event!</h1>
+  <%= render "form" %>
+  <%= link_to 'Back to event page', @event %> | 
+  <%= link_to 'Back to all events', events_path %>
+</div>
