@@ -1,10 +1,14 @@
-<h1><%= @event.title %></h1>
-  
-  <%= @event.description %>
-  <%= @event.start_time %>
-  <%= @event.end_time %>
-</p>
+<div class="container">
+  <h1><%= @event.title %></h1>
+    <ul style="list-style: none">
+      <li>Description: <%= @event.description %></li>
+      <li>Start Time: <%= @event.start_time %></li>
+      <li>End Time: <%= @event.end_time %></li>
+    </ul>
+  </p>
 
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+  <%= link_to 'Edit event', edit_event_path(@event) %> |
+  <%= link_to 'Back to all events', events_path %>
+</div>
+
