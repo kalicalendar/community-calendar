@@ -1,9 +1,9 @@
 <div class="container">
 <h1>All Events</h1>
-<table>
+<table class="table table-responsive">
   <% @events.each do |event| %>
     <tr>
-      <td><%= event.title %></td>
+      <td><%= link_to event.title, event_path(event) %></td>
       <td><%= link_to 'Edit', edit_event_path(event) %></td>
       <td><%= link_to 'Destroy', event, method: :delete %></td>
     </tr>
