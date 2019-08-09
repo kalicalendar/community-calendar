@@ -1,13 +1,33 @@
+
 <div class="container">
 <h1>All Events</h1>
-<table class="table table-responsive">
-  <% @events.each do |event| %>
-    <tr>
-      <td><%= link_to event.title, event_path(event) %></td>
-      <td><%= link_to 'Edit', edit_event_path(event) %></td>
-      <td><%= link_to 'Destroy', event, method: :delete %></td>
-    </tr>
+
+<%= month_calendar events: @events do |date, events| %>
+  <%= date.day %>
+
+  <% events.each do |event| %>
+    <div>
+     <%= link_to event.title, event_path(event) %>
+    </div>
   <% end %>
-</table>
+<% end %>
 <p><%= link_to 'Create new event', new_event_path %></p>
+<hr>
 </div>
+<div class="container">
+<br>
+  <h3> List of all events </h3>
+  <table class="table table-responsive">
+    <% @events.each do |event| %>
+      <tr>
+        <td><%= link_to event.title, event_path(event) %></td>
+        <td><%= link_to 'Edit', edit_event_path(event) %></td>
+        <td><%= link_to 'Destroy', event, method: :delete %></td>
+      </tr>
+    <% end %>
+  </table>
+  <p><%= link_to 'Create new event', new_event_path %></p>
+</div>
+
+
+
