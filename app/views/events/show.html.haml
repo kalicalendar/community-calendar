@@ -1,0 +1,12 @@
+.container
+  %h1= @event.title
+  %ul{:style => "list-style: none"}
+    %li
+      Description: #{@event.description}
+    %li
+      Start Time: #{@event.start_time}
+    %li
+      End Time: #{@event.end_time}
+  = link_to 'Edit event', edit_event_path(@event)
+  = link_to 'Back to all events', events_path
+
