@@ -6,9 +6,8 @@
       %div
         = link_to event.title, event_path(event)
   %p= link_to 'Create new event', new_event_path
-  %hr/
 .container
-  %br/
+  %br
   %h3 List of all events
   %table.table.table-responsive
     - @events.each do |event|
