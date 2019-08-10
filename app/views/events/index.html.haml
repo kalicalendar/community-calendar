@@ -1,0 +1,19 @@
+.container
+  %h1 All Events
+  = month_calendar events: @events do |date, events|
+    = date.day
+    - events.each do |event|
+      %div
+        = link_to event.title, event_path(event)
+  %p= link_to 'Create new event', new_event_path
+  %hr/
+.container
+  %br/
+  %h3 List of all events
+  %table.table.table-responsive
+    - @events.each do |event|
+      %tr
+        %td= link_to event.title, event_path(event)
+        %td= link_to 'Edit', edit_event_path(event)
+        %td= link_to 'Destroy', event, method: :delete
+  %p= link_to 'Create new event', new_event_path
