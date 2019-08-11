@@ -9,20 +9,24 @@
           %li= msg
       %h3 Please try again...
   %p
+  .form-group
     = form.label("Title of Event")
     %br
-    = form.text_field :title
+    = form.text_field :title, class: 'form-control'
     %br
+  .form-group
     = form.label("Description of Event")
     %br
-    = form.text_area :description
+    = form.text_area :description, class: 'form-control'
     %br
+  .form-group
     = form.label("Event begins at")
     %br
-    = form.datetime_select :start_time, :include_blank => true
+    = form.text_field :start_time, :include_blank => true, class: 'form-control datetimepicker'
     %br
+  .form-group
     = form.label("Event ends at")
     %br
-    = form.datetime_select :end_time, :include_blank => true
+    = form.text_field :end_time, :include_blank => true, class: 'form-control datetimepicker'
   %p
     = form.submit
