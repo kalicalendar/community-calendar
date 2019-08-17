@@ -21,12 +21,29 @@
     %br
   .form-group
     = form.label("Event begins at")
-    %br
-    = form.text_field :start_time, :include_blank => true, class: 'form-control datetimepicker'
-    %br
+    %div{:class => 'input-group date',:id=>'datetimepicker_start_time', 'data-target-input'=>'nearest'}
+      %input{:class => 'form-control datetimepicker',:value => :start_time, :include_blank => true, :id => 'datetimepicker_start_time', 'data-toggle'=>'datetimepicker','data-target'=>'#datetimepicker_start_time'}
+      %div{:class => 'input-group-append','data-target'=>'#datetimepicker_start_time','data-toggle'=>'datetimepicker'}
+        %div{:class => 'input-group-text'}
+          %i{:class => 'fa fa-calendar'}
   .form-group
     = form.label("Event ends at")
-    %br
-    = form.text_field :end_time, :include_blank => true, class: 'form-control datetimepicker'
+    %div{:class => 'input-group date',:id=>'datetimepicker_end_time', 'data-target-input'=>'nearest'}
+      %input{:class => 'form-control datetimepicker',:value => :end_time, :include_blank => true, :id => 'datetimepicker_end_time', 'data-toggle'=>'datetimepicker','data-target'=>'#datetimepicker_end_time'}
+      %div{:class => 'input-group-append','data-target'=>'#datetimepicker_end_time','data-toggle'=>'datetimepicker'}
+        %div{:class => 'input-group-text'}
+          %i{:class => 'fa fa-calendar'}
   %p
     = form.submit
+:javascript
+  $(function () {
+      $('#datetimepicker_start_time').datetimepicker({
+          locale: 'en-gb'
+      });
+  });
+  $(function () {
+      $('#datetimepicker_end_time').datetimepicker({
+          locale: 'en-gb'
+      });
+  });
+
