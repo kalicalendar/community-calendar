@@ -9,20 +9,35 @@
           %li= msg
       %h3 Please try again...
   %p
+  .form-group
     = form.label("Title of Event")
     %br
-    = form.text_field :title
+    = form.text_field :title, class: 'form-control'
     %br
+  .form-group
     = form.label("Description of Event")
     %br
-    = form.text_area :description
+    = form.text_area :description, class: 'form-control'
     %br
+  .form-group
     = form.label("Event begins at")
-    %br
-    = form.datetime_select :start_time, :include_blank => true
-    %br
+    %div{:class => 'input-group date',:id=>'datetimepicker_start_time', 'data-target-input'=>'nearest'}
+      %input{:class => 'form-control datetimepicker',:name => "event[start_time]", :include_blank => true, :id => 'datetimepicker_start_time', 'data-toggle'=>'datetimepicker','data-target'=>'#datetimepicker_start_time'}
+      %div{:class => 'input-group-append','data-target'=>'#datetimepicker_start_time','data-toggle'=>'datetimepicker'}
+        %div{:class => 'input-group-text'}
+          %i{:class => 'fa fa-calendar'}
+  .form-group
     = form.label("Event ends at")
-    %br
-    = form.datetime_select :end_time, :include_blank => true
+    %div{:class => 'input-group date',:id=>'datetimepicker_end_time', 'data-target-input'=>'nearest'}
+      %input{:class => 'form-control datetimepicker',:name => "event[end_time]", :include_blank => true, :id => 'datetimepicker_end_time', 'data-toggle'=>'datetimepicker','data-target'=>'#datetimepicker_end_time'}
+      %div{:class => 'input-group-append','data-target'=>'#datetimepicker_end_time','data-toggle'=>'datetimepicker'}
+        %div{:class => 'input-group-text'}
+          %i{:class => 'fa fa-calendar'}
   %p
     = form.submit
+:javascript
+  $(function () {
+      $('#datetimepicker_start_time').datetimepicker({
+      });
+  });
+
