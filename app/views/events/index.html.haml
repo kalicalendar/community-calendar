@@ -14,5 +14,5 @@
       %tr
         %td= link_to event.title, event_path(event)
         %td= link_to 'Edit', edit_event_path(event)
-        %td= link_to 'Destroy', event, method: :delete
+        %td= link_to 'Destroy', event_path(event), method: :delete, data:{confirm: 'Are you sure?'}
   %p= link_to 'Create new event', new_event_path
