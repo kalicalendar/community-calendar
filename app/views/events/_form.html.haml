@@ -22,14 +22,14 @@
   .form-group
     = form.label("Event begins at")
     .input-group.date.datetime#datetimepicker_start_time{'data-target-input'=>'nearest'}
-      %input.form-control.datetimepicker{:name => "event[start_time]",:include_blank => true,'data-toggle'=>'datetimepicker','data-target'=>'#datetimepicker_start_time'}
+      %input.form-control.datetimepicker{:name => "event[start_time]",'data-toggle'=>'datetimepicker','data-target'=>'#datetimepicker_start_time'}
       .input-group-append{'data-target'=>'#datetimepicker_start_time','data-toggle'=>'datetimepicker'}
         .input-group-text
           %i.fa.fa-calendar
   .form-group
     = form.label("Event ends at")
     .input-group.date.datetime#datetimepicker_end_time{'data-target-input'=>'nearest'}
-      %input.form-control.datetimepicker{:name => "event[end_time]",:include_blank => true,'data-toggle'=>'datetimepicker','data-target'=>'#datetimepicker_end_time'}
+      %input.form-control.datetimepicker{:name => "event[end_time]",'data-toggle'=>'datetimepicker','data-target'=>'#datetimepicker_end_time'}
       .input-group-append{'data-target'=>'#datetimepicker_end_time','data-toggle'=>'datetimepicker'}
         .input-group-text
           %i.fa.fa-calendar
@@ -38,7 +38,8 @@
 :javascript
   $(function () {
       $('.datetime').datetimepicker({
-        format: 'YYYY-MM-DD hh:mm'
+        format: 'YYYY-MM-DD hh:mm',
+        autoclose: true
       });
   });
 
