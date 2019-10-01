@@ -38,8 +38,14 @@
 :javascript
   $(function () {
       $('.datetime').datetimepicker({
-        format: 'YYYY-MM-DD hh:mm',
-        autoclose: true
+        format: 'YYYY-MM-DD HH:mm',
+        autoclose: true,
+        minDate: getToday()
       });
+      function getToday(){
+        var date = new Date();
+        var today = new Date(date.getFullYear(),date.getMonth(),date.getDate());
+        return today;
+      }
   });
 
