@@ -40,12 +40,7 @@
       $('.datetime').datetimepicker({
         format: 'YYYY-MM-DD HH:mm',
         autoclose: true,
-        minDate: getToday()
+        minDate: moment()
       });
-      function getToday(){
-        var date = new Date();
-        var today = new Date(date.getFullYear(),date.getMonth(),date.getDate());
-        return today;
-      }
   });
 
