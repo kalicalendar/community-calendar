@@ -1,18 +1,19 @@
-.container
-  %h1 All Events
-  = month_calendar events: @events do |date, events|
-    = date.day
-    - events.each do |event|
-      %div
-        = link_to event.title, event_path(event)
-  %p= link_to 'Create new event', new_event_path
-.container
-  %br
-  %h3 List of all events
-  %table.table.table-responsive
-    - @events.each do |event|
-      %tr
-        %td= link_to event.title, event_path(event)
-        %td= link_to 'Edit', edit_event_path(event)
-        %td= link_to 'Destroy', event_path(event), method: :delete, data:{confirm: 'Are you sure?'}
-  %p= link_to 'Create new event', new_event_path
+.content  
+  .container
+    %h1 All Events
+    = week_calendar events: @events, number_of_weeks: 1  do |date, events|
+      = date.day
+      - events.each do |event|
+        %div
+          = link_to event.title, event_path(event)
+    %p= link_to 'Create new event', new_event_path
+  .container
+    %br
+    %h3 List of all events
+    %table.table.table-responsive
+      - @events.each do |event|
+        %tr
+          %td= link_to event.title, event_path(event)
+          %td= link_to 'Edit', edit_event_path(event)
+          %td= link_to 'Destroy', event_path(event), method: :delete, data:{confirm: 'Are you sure?'}
+    %p= link_to 'Create new event', new_event_path
