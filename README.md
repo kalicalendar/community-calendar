@@ -1,9 +1,22 @@
-# [Community Calendar for code curious and friends]
-
+# * kali
 
 EPIC </br>
-A calendar where multiple organizations (code curious, heart of code, pyladies,...) can create, read, update and delete events and that can be accessed by users who are interested in these events.
+* kali is a calendar application for berlin-based women*-who-code groups (code curious, heart of code, pyladies,...).
+Through * kali all events of all groups can be seen in one calender view (in order to...build a stronger/bigger community??). Every group can create, read, update and delete events that can be accessed (website?) by users who are interested in these events.
 
+* kali is an open source project that was started by a rubystars (code curious) study group in 2019. If you want to contribute, go HERE. 
+
+
+--> link to HERE:
+
+readme for contributors:
+
+- How to clone
+- How to set-up
+- Link zu Coc
+- how we work (tickets...?)
+
+...
 
 ## ADMIN|ORGANIZATION STORIES </br>
 As an organization such as "Code Curious" I want to be able to...
@@ -107,7 +120,5 @@ As developers we want to..
 
 ## NEXT STEPS </br>
 
-- think about the database structure and make a drawing.
-- 16. April: break first version down into small tasks (tickets). Decide platform for tickets (Trello?, ...). 
-- Celeste wont be in B from 18.4.-8.5.!
+
 
