@@ -13,7 +13,7 @@ readme for contributors:
 
 - How to clone
 - How to set-up
-- Link zu Coc
+- Link zu Coc --> http://berlincodeofconduct.org/
 - how we work (tickets...?)
 
 ...
