@@ -1,20 +1,12 @@
-# * kali
+# \*kali
 
-EPIC </br>
-* kali is a calendar application for berlin-based women*-who-code groups (code curious, heart of code, pyladies,...).
-Through * kali all events of all groups can be seen in one calender view (in order to...build a stronger/bigger community??). Every group can create, read, update and delete events that can be accessed (website?) by users who are interested in these events.
+\*kali is a calendar application for berlin-based women*-who-code groups (code curious, heart of code, pyladies,...).
+Through \*kali, all events of all groups can be seen in one calender view (in order to...build a stronger/bigger community??). Every group can create, read, update and delete events that can be accessed (through a website?) by users who are interested in these events.
 
-* kali is an open source project that was started by a rubystars (code curious) study group in 2019. If you want to contribute, go HERE. 
+\*kali is an open source project that was started by a rubystars (code curious) study group in 2019. If you want to contribute, go [HERE](CONTRIBUTORS.md).
 
 
---> link to HERE:
 
-readme for contributors:
-
-- How to clone
-- How to set-up
-- Link zu Coc --> http://berlincodeofconduct.org/
-- how we work (tickets...?)
 
 ...
 
