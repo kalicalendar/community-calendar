@@ -21,23 +21,31 @@
     %br
   .form-group
     = form.label("Event begins at")
-    %div{:class => 'input-group date',:id=>'datetimepicker_start_time', 'data-target-input'=>'nearest'}
-      %input{:class => 'form-control datetimepicker',:name => "event[start_time]", :include_blank => true, :id => 'datetimepicker_start_time', 'data-toggle'=>'datetimepicker','data-target'=>'#datetimepicker_start_time'}
-      %div{:class => 'input-group-append','data-target'=>'#datetimepicker_start_time','data-toggle'=>'datetimepicker'}
-        %div{:class => 'input-group-text'}
-          %i{:class => 'fa fa-calendar'}
+    .input-group.date.datetime#datetimepicker_start_time{'data-target-input'=>'nearest'}
+      %input.form-control.datetimepicker{:name => "event[start_time]",'data-toggle'=>'datetimepicker','data-target'=>'#datetimepicker_start_time'}
+      .input-group-append{'data-target'=>'#datetimepicker_start_time','data-toggle'=>'datetimepicker'}
+        .input-group-text
+          %i.fa.fa-calendar
   .form-group
     = form.label("Event ends at")
-    %div{:class => 'input-group date',:id=>'datetimepicker_end_time', 'data-target-input'=>'nearest'}
-      %input{:class => 'form-control datetimepicker',:name => "event[end_time]", :include_blank => true, :id => 'datetimepicker_end_time', 'data-toggle'=>'datetimepicker','data-target'=>'#datetimepicker_end_time'}
-      %div{:class => 'input-group-append','data-target'=>'#datetimepicker_end_time','data-toggle'=>'datetimepicker'}
-        %div{:class => 'input-group-text'}
-          %i{:class => 'fa fa-calendar'}
+    .input-group.date.datetime#datetimepicker_end_time{'data-target-input'=>'nearest'}
+      %input.form-control.datetimepicker{:name => "event[end_time]",'data-toggle'=>'datetimepicker','data-target'=>'#datetimepicker_end_time'}
+      .input-group-append{'data-target'=>'#datetimepicker_end_time','data-toggle'=>'datetimepicker'}
+        .input-group-text
+          %i.fa.fa-calendar
   %p
     = form.submit
 :javascript
   $(function () {
-      $('#datetimepicker_start_time').datetimepicker({
+      $('.datetime').datetimepicker({
+        format: 'YYYY-MM-DD HH:mm',
+        autoclose: true,
+        minDate: getToday()
       });
+      function getToday(){
+        var date = new Date();
+        var today = new Date(date.getFullYear(),date.getMonth(),date.getDate());
+        return today;
+      }
   });
 
