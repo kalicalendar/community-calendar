@@ -1,0 +1,4 @@
+- How to clone
+- How to set-up
+- Please read our [Code of Conduct](http://berlincodeofconduct.org/)
+- how we work (tickets...?)
