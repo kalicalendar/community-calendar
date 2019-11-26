@@ -7,6 +7,12 @@ Through \*kali, all events of all groups can be seen in one calender view (in or
 
 
 
+readme for contributors:
+
+- How to clone
+- How to set-up
+- Link zu Coc --> https://www.contributor-covenant.org/
+- how we work (tickets...?)
 
 ...
 
