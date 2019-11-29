@@ -7,9 +7,10 @@ Before you start getting involved, please read our [Code of Conduct](https://www
 
 1. How to have a look at our code and run the kali-calender in your browser
 
-- clone the repository: Open your terminal/console and copy-paste "git clone git@github.com:kalicalendar/community-calendar.git" and run it by pressing Enter. You should see... 
-- start the server: run "rails s" in your terminal you should see...
-- copy-paste the "localhost:3000" into your browser address bar. You should see our kali-calender website!
+- clone the repository: Open your terminal/console and copy-paste `git clone git@github.com:kalicalendar/community-calendar.git` and run it by pressing Enter.
+You should see (copypaste?)
+- start the server: run `rails s` in your terminal you should see (copypaste from terminal?)
+- copy-paste the `localhost:3000` into your browser address bar. You should see our kali-calender website!
 
 
 2. How to decide what to contribute and grab an issue:
@@ -22,12 +23,12 @@ Before you start getting involved, please read our [Code of Conduct](https://www
 
 Before you start changing or adding code, it is important that you do that on your own working branch (not on the master-branch!). 
 To create your own branch, do the following:
-- if the server is still running (you started it by running "rails s"), stop it (in your terminal) with strg+C
-- to make sure you have the latest version of the master-branch, run "git pull" in your terminal
-- if everything is up-to-date, run "git checkout -b <your-name>/<name-of-branch/issue>", so for example "git checkout -b sarah/adding-weekly-view". This creates a branch called adding-weekly-view in sarah's local repository.
+- if the server is still running (you started it by running `rails s`), stop it (in your terminal) with strg+C
+- to make sure you have the latest version of the master-branch, run `git pull` in your terminal
+- if everything is up-to-date, run `git checkout -b <your-name>/<name-of-branch/issue>`, so for example `git checkout -b sarah/adding-weekly-view`. This creates a branch called adding-weekly-view in sarah's local repository.
 - now you can change and add code.
-- after adding and committing your changes to your local working branch, you need to push the branch to the repository by running "git push -u origin sarah/adding-weekly-view" (oder direkt nach dem create schon?)
-- after you made your changes and tested them, please send us a pull request, by ...?
+- after adding and committing your changes to your local working branch, you need to push the branch to the repository by running `git push -u origin sarah/adding-weekly-view` (oder direkt nach dem create schon?)
+- after you made your changes and tested them, please send us a pull request. Go to "branches" on github and click "pull request" on your branch. (genauer...?)
 
 If you have any questions, GitHub Help is a great resource!
 
