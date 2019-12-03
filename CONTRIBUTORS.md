@@ -1,13 +1,24 @@
+## Contribution Guidelines
 
+So you want to contribute to our project.  Great!
+Before you start getting involved, please read the [Code of Conduct](https://www.contributor-covenant.org/) that we're following. By contributing to this project you agree to abide by its terms.
 
-...so you want to contribute to our project -- great!
-Before you start getting involved, please read our [Code of Conduct](https://www.contributor-covenant.org/)
+## First Steps of Contributing
+- fork repo (link github docs for working with forks https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+- clone repo
+- link to workflow in wiki (how to name branches, etc)
 
 <b>Here is a beginners-friendly step-by-step guide</b>
 
 1. How to have a look at our code and run the kali-calender in your browser
 
-- clone the repository: Open your terminal/console and copy-paste `git clone git@github.com:kalicalendar/community-calendar.git` and run it by pressing Enter.
+- clone the repository: Open your terminal/console and copy-paste
+
+```
+$ git clone git@github.com:kalicalendar/community-calendar.git
+``` 
+
+and run it by pressing Enter.
 You should see (copypaste?)
 - start the server: run `rails s` in your terminal you should see (copypaste from terminal?)
 - copy-paste the `localhost:3000` into your browser address bar. You should see our kali-calender website!
