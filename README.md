@@ -1,7 +1,7 @@
 # \*kali
 
 \*kali is a calendar application for berlin-based groups of women* who learn how to code.
-\*kali is a platform that gathers all events of those groups, in order to build a stronger community and increase their visibility. 
+As a platform it gathers all events of those groups, in order to build a stronger community and increase their visibility. 
 
 Every group can create an account and post their events so that everyone interested can browse through them.
 
