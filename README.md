@@ -5,6 +5,20 @@ As a platform it gathers all events of those groups, in order to build a stronge
 
 Every group can create an account and post their events so that everyone interested can browse through them.
 
+## First Mockups
+This is our first (rough) visual idea of the app. <br><br>
+View of all events when logged in:
+
+![Mockup of all events when logged in](images/All_events.logged_in.png) 
+<br><br>
+
+View of all events when logged out:
+![Mockup of all events when logged out](images/All_events.logged_out.png)
+<br><br>
+
+View of calendar page when logged in:
+![Mockup of calendar view when logged in](images/Calendar_view.logged_in.png)
+
 \*kali is an open source project that was started in 2019 by the [code curious](https://www.codecurious.org) study group "Ruby Stars". If you want to contribute to our project, go for it and check out our guidelines: [contributors.md](CONTRIBUTORS.md)
 
 
