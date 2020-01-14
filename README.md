@@ -4,9 +4,10 @@
 
 \*kali is a calendar application for berlin-based groups of women* who learn how to code. As a platform it gathers all events of those groups, in order to build a stronger community and increase their visibility. Every group can create an account and post their events so that everyone interested can browse through them.
 
-...At least, thats the plan :) Under <b>First Mockups</b> and <b>Minimum Viable Product</b> below you can see how we imagine the calender to be. For that, we need your help. If you want to contribute to our project, go for it and check out our [guidelines](CONTRIBUTORS.md).
+...At least, thats the plan :) Under [First Mockups](#first-mockups) and 
+[Minimum Viable Product](#minimum-viable-product) below you can see how we imagine the calender to be. For that, we need your help. If you want to contribute to our project, go for it and check out our [guidelines](CONTRIBUTORS.md).
 
-If you want to check-out the current state of \*kali, follow our set-up guide below.
+If you want to check out the current state of \*kali, follow our set-up guide below.
 
 ## Set-up Guide
 
@@ -16,7 +17,7 @@ If you want to check-out the current state of \*kali, follow our set-up guide be
 ```
 $ git clone git@github.com:kalicalendar/community-calendar.git
 ``` 
-- install Bundler (if you don't have it already):
+- install Bundler:
 ```
 $  gem install bundler
 ```
@@ -58,17 +59,20 @@ Use Ctrl-C to stop
 
 
 ## First Mockups
-This is our first (rough) visual idea of the app. <br><br>
+This is our first (rough) visual idea of the app. 
+<br><br>
 View of all events when logged in:
 
 ![Mockup of all events when logged in](images/All_events.logged_in.png) 
 <br><br>
 
 View of all events when logged out:
+
 ![Mockup of all events when logged out](images/All_events.logged_out.png)
 <br><br>
 
 View of calendar page when logged in:
+
 ![Mockup of calendar view when logged in](images/Calendar_view.logged_in.png)
 
 
