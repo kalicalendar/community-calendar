@@ -1,76 +1,80 @@
 # \*kali
 
-\*kali is a calendar application for berlin-based women*-who-code groups (code curious, heart of code, pyladies,...).
-Through \*kali, all events of all groups can be seen in one calender view (in order to...build a stronger/bigger community??). Every group can create, read, update and delete events that can be accessed (through a website?) by users who are interested in these events.
+*This is an open source project that was started in 2019 by the [code curious](https://www.codecurious.org) study group "Ruby Stars".* 
 
-\*kali is an open source project that was started by a rubystars (code curious) study group in 2019. If you want to contribute, go [HERE](CONTRIBUTORS.md).
+\*kali is a calendar application for berlin-based groups of women* who learn how to code. As a platform it gathers all events of those groups, in order to build a stronger community and increase their visibility. Every group can create an account and post their events so that everyone interested can browse through them.
 
+...At least, thats the plan :) Under [First Mockups](#first-mockups) and 
+[Minimum Viable Product](#minimum-viable-product) below you can see how we imagine the calender to be. For that, we need your help. If you want to contribute to our project, go for it and check out our [guidelines](CONTRIBUTORS.md).
 
+If you want to check out the current state of \*kali, follow our set-up guide below.
 
-readme for contributors:
+## Set-up Guide
 
-- How to clone
-- How to set-up
-- Link zu Coc --> https://www.contributor-covenant.org/
-- how we work (tickets...?)
+<b>1. How to have a look at our code and run the kali-calender in your browser</b>
 
-...
+- in your terminal/console, clone the repository:
+```
+$ git clone git@github.com:kalicalendar/community-calendar.git
+``` 
+- install Bundler:
+```
+$  gem install bundler
+```
+- install the gems:
+```
+$ bundle install
+```
+- create the database:
+```
+$ bundle exec rake db:create
+```
+- run the database migrations:
+```
+$ bundle exec rake db:migrate
+```
+- run the database seeds:
+```
+$ bundle exec rake db:seed # this will create initial profiles that are listed in the db/seed.rb
+```
+- run the app:
+```
+$ bundle exec rails s
+```
 
-## ADMIN|ORGANIZATION STORIES </br>
-As an organization such as "Code Curious" I want to be able to...
+- you should see:
+```
+=> Booting Puma
+=> Rails 5.2.3 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.12.1 (ruby 2.6.2-p47), codename: Llamas in Pajamas
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Use Ctrl-C to stop
+```
 
-1) see a calendar.
-
-2) create events with the following characteristics: 
-   First priority: date, time, title, description.
-   Second priority: location, tags, "hosted by".   
-   Third priority: type of event, max. number of participants, public or private event.
-
-3) edit created events.
-
-4) delete events.
-
-5) see events in different calendar views: 
-    First priority: monthly.
-    Second priority: weekly, year. 
-    
-6) create a profile for the organization with the following characteristics: 
-    First priority: name of the organization, short description, link to the website, a picture.
-    Second priority: list of events added by the organization.
-
-7) edit the profile of the organization. 
-
-8) delete the profile of the organization.
-  
-9) I also want that only registered organizations have the power to add, edit and delete events from the calendar.
-
-
-## USER STORIES </br>
-As a calendar user I want to be able to...
-
-1) see all the events titles in the calendar: 
-    First priority: monthly.
-    Second priority: weekly, year.
-    
-2) click on the events and see the information.
-
-3) distinguish between the different organizations by different colours.
-
-4) filter the events by: 
-    First priority: organization.
-    Second priority: type of event. 
-
-5) search for events by tags , i.e. "beginners" or programming language.
-
-6) find short information about the organizations and links to their websites.
+- copy-paste `localhost:3000` into your browser address bar. You should see our kali-calender website! 
 
 
-## DEVELOPER STORIES </br>
-As developers we want to..
+## First Mockups
+This is our first (rough) visual idea of the app. 
+<br><br>
+View of all events when logged in:
 
-- use the rails calendar helper instead of whole APIs to be able to learn more.
+![Mockup of all events when logged in](images/All_events.logged_in.png) 
+<br><br>
 
-- add the organizations as admin manually instead of setting up a whole log-in-system.
+View of all events when logged out:
+
+![Mockup of all events when logged out](images/All_events.logged_out.png)
+<br><br>
+
+View of calendar page when logged in:
+
+![Mockup of calendar view when logged in](images/Calendar_view.logged_in.png)
+
 
 
 ## Minimum Viable Product (MVP) </br>
@@ -115,8 +119,4 @@ As developers we want to..
 
 6) search for events by tags.
 
-
-## NEXT STEPS </br>
-
-
-
+...and again, if you want to contribute, go [here](CONTRIBUTORS.md).
