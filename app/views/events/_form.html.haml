@@ -24,7 +24,7 @@
       .form-group
         = form.label("Event begins at")
         .input-group.date#datetimepicker_start_time{'data-target-input'=>"nearest"}
-          %input.form-control.datetimepicker-input{:name => "event[start_time]",'type'=>"text", 'data-target'=>"#datetimepicker_start_time", :value => @event.start_time ? @event.start_time.strftime('%F %R') : Time.now}
+          %input.form-control.datetimepicker-input{:name => "event[start_time]",'type'=>"text", 'data-target'=>"#datetimepicker_start_time", :value => @event.start_time ? @event.start_time.strftime('%F %R') : ''}
           .input-group-append{'data-target'=>"#datetimepicker_start_time", 'data-toggle'=>"datetimepicker"}
             .input-group-text
               %i.fa.fa-calendar
@@ -32,7 +32,7 @@
       .form-group
         = form.label("Event ends at")   
         .input-group.date#datetimepicker_end_time{'data-target-input'=>"nearest"}
-          %input.form-control.datetimepicker-input{:name => "event[end_time]",'type'=>"text",'data-target'=>"#datetimepicker_end_time", :value => @event.end_time ? @event.end_time.strftime('%F %R') : Time.now}
+          %input.form-control.datetimepicker-input{:name => "event[end_time]",'type'=>"text",'data-target'=>"#datetimepicker_end_time", :value => @event.end_time ? @event.end_time.strftime('%F %R') : ''}
           .input-group-append{'data-target'=>"#datetimepicker_end_time", 'data-toggle'=>"datetimepicker"}
             .input-group-text
               %i.fa.fa-calendar
@@ -48,13 +48,8 @@
     });
     $('#datetimepicker_end_time').datetimepicker({
       format: 'YYYY-MM-DD HH:mm',
-      autoclose: true
-    });
-    $("#datetimepicker_start_time").on("change.datetimepicker", function (e) {
-        $('#datetimepicker_end_time').datetimepicker('minDate', e.date);
-    });
-    $("#datetimepicker_end_time").on("change.datetimepicker", function (e) {
-        $('#datetimepicker_start_time').datetimepicker('maxDate', e.date);
+      autoclose: true,
+      useCurrent: false
     });
   });
 
