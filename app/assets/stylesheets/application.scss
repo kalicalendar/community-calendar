@@ -22,6 +22,25 @@ html {
   height: 100%;
 }
 
+.navbar-kali {
+  justify-content: space-between;
+  background: #F4F4F4;
+  height: 100px;
+}
+
+.navbar-kali .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-kali .navbar-brand img {
+  width: 40px;
+}
+
+.fa.fa-user {
+  font-size: 30px;
+  padding: 5px;
+}
+
 body {
   height: 100%;
   display: grid;
