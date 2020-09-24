@@ -29,7 +29,8 @@ html {
 }
 
 .navbar-kali .navbar-collapse {
-  flex-grow: 0;
+  // flex-grow: 0;
+  // justify-self: stretch;
 }
 
 .navbar-kali .navbar-brand img {
@@ -44,14 +45,11 @@ html {
 body {
   height: 100%;
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 100px auto 100px;
   grid-template-columns: 100%;
 }
 
-.content {
-  display: grid;
-}
-.container {
+.calendar-container {
   height: 100%;
 }
 .footer {
@@ -59,13 +57,13 @@ body {
   height: 100px;
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 
 }
 .footer-links {
-  display: flex;
   align-items: center;
 }
 .footer-links a {
@@ -77,6 +75,10 @@ body {
 }
 .footer-links a:hover {
   opacity: 1;
+}
+
+.footer-copyright {
+  text-align: right;
 }
 .footer .fa-heart {
   color: #D23333;
