@@ -22,6 +22,13 @@ html {
   height: 100%;
 }
 
+body {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 100px auto 100px;
+  grid-template-columns: 100%;
+}
+
 .navbar-kali {
   justify-content: space-between;
   background: #F4F4F4;
@@ -40,13 +47,6 @@ html {
 .fa.fa-user {
   font-size: 30px;
   padding: 5px;
-}
-
-body {
-  height: 100%;
-  display: grid;
-  grid-template-rows: 100px auto 100px;
-  grid-template-columns: 100%;
 }
 
 .calendar-container {
