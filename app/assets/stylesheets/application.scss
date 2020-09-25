@@ -29,19 +29,27 @@ body {
   grid-template-columns: 100%;
 }
 
+.container {
+  padding: 1.6rem;
+}
+
 .navbar-kali {
   justify-content: space-between;
   background: #F4F4F4;
-  height: 100px;
-}
-
-.navbar-kali .navbar-collapse {
-  // flex-grow: 0;
-  // justify-self: stretch;
+  padding: 1.6rem 1rem;
 }
 
 .navbar-kali .navbar-brand img {
   width: 40px;
+}
+
+.navbar-kali .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-nav .nav-link {
+  background: #F4F4F4;
+  padding: 0.25rem 1rem;
 }
 
 .fa.fa-user {
@@ -52,6 +60,7 @@ body {
 .calendar-container {
   height: 100%;
 }
+
 .footer {
   background: #F4F4F4;
   height: 100px;
@@ -76,7 +85,6 @@ body {
 .footer-links a:hover {
   opacity: 1;
 }
-
 .footer-copyright {
   text-align: right;
 }
