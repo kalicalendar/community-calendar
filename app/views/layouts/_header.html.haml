@@ -1,0 +1,20 @@
+.navbar.navbar-expand-sm.navbar-light.navbar-kali
+  .navbar-collapse.w-100.order-1.order-md-0.dual-collapse2
+    =link_to homepage_index_url, class: 'navbar-brand' do
+      =image_tag "https://avatars3.githubusercontent.com/u/56892398?s=400&u=700befcb15dd0280bd2f5925902bbb9f0f220a37&v=4.png"
+    %button.navbar-toggler.ml-auto{:type => 'button', 'data-toggle' => 'collapse', 'data-target' => '#navbarSupportedContent', 'aria-controls' => 'navbarSupportedContent', 'aria-expanded' => 'false', 'aria-label' => 'Toggle navigation'}
+      %span.navbar-toggler-icon
+    .collapse.navbar-collapse#navbarSupportedContent
+      %ul.navbar-nav.ml-auto.dropdown-menu-left
+        = link_to 'All Events', homepage_index_url, class: 'nav-link'
+        = link_to 'Calendar View', events_url, class: 'nav-link'
+        = link_to 'Groups', homepage_index_url, class: 'nav-link'
+        = link_to 'About', homepage_index_url, class: 'nav-link'
+  .navbar-collapse.collapse.order-2.dual-collapse2
+    .navbar-nav.ml-auto
+      %li.nav-item.dropdown
+        %i.fa.fa-user{'data-toggle' => "dropdown", 'aria-haspopup' => "true", 'aria-expanded' => "false"}
+        .dropdown-menu.dropdown-menu-right{'aria-labelledby' => "navbarDropdown"}
+          = link_to 'Action', homepage_index_url, class: 'dropdown-item'
+          = link_to 'Another Action', homepage_index_url, class: 'dropdown-item'
+          

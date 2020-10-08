@@ -16,3 +16,81 @@
 @import "tempusdominus-bootstrap-4";
 @import "font-awesome";
 @import "simple_calendar";
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 100px auto 100px;
+  grid-template-columns: 100%;
+}
+
+.container {
+  padding: 1.6rem;
+}
+
+.navbar-kali {
+  justify-content: space-between;
+  background: #F4F4F4;
+  padding: 1.6rem 1rem;
+}
+
+.navbar-kali .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-kali .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-nav .nav-link {
+  background: #F4F4F4;
+  padding: 0.25rem 1rem;
+}
+
+.fa.fa-user {
+  font-size: 30px;
+  padding: 5px;
+}
+
+.calendar-container {
+  height: 100%;
+}
+
+.footer {
+  background: #F4F4F4;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+}
+.footer-links {
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer-copyright {
+  text-align: right;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
+
+
+
