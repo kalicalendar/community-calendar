@@ -1,65 +1,80 @@
-# [Community Calendar for code curious and friends]
+# \*kali
+
+*This is an open source project that was started in 2019 by the [code curious](https://www.codecurious.org) study group "Ruby Stars".* 
+
+\*kali is a calendar application for berlin-based groups of women* who learn how to code. As a platform it gathers all events of those groups, in order to build a stronger community and increase their visibility. Every group can create an account and post their events so that everyone interested can browse through them.
+
+...At least, thats the plan :) Under [First Mockups](#first-mockups) and 
+[Minimum Viable Product](#minimum-viable-product) below you can see how we imagine the calender to be. For that, we need your help. If you want to contribute to our project, go for it and check out our [guidelines](CONTRIBUTORS.md).
+
+If you want to check out the current state of \*kali, follow our set-up guide below.
+
+## Set-up Guide
+
+<b>1. How to have a look at our code and run the kali-calender in your browser</b>
+
+- in your terminal/console, clone the repository:
+```
+$ git clone git@github.com:kalicalendar/community-calendar.git
+``` 
+- install Bundler:
+```
+$  gem install bundler
+```
+- install the gems:
+```
+$ bundle install
+```
+- create the database:
+```
+$ bundle exec rake db:create
+```
+- run the database migrations:
+```
+$ bundle exec rake db:migrate
+```
+- run the database seeds:
+```
+$ bundle exec rake db:seed # this will create initial profiles that are listed in the db/seed.rb
+```
+- run the app:
+```
+$ bundle exec rails s
+```
+
+- you should see:
+```
+=> Booting Puma
+=> Rails 5.2.3 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.12.1 (ruby 2.6.2-p47), codename: Llamas in Pajamas
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Use Ctrl-C to stop
+```
+
+- copy-paste `localhost:3000` into your browser address bar. You should see our kali-calender website! 
 
 
-EPIC </br>
-A calendar where multiple organizations (code curious, heart of code, pyladies,...) can create, read, update and delete events and that can be accessed by users who are interested in these events.
+## First Mockups
+This is our first (rough) visual idea of the app. 
+<br><br>
+View of all events when logged in:
 
+![Mockup of all events when logged in](images/All_events.logged_in.png) 
+<br><br>
 
-## ADMIN|ORGANIZATION STORIES </br>
-As an organization such as "Code Curious" I want to be able to...
+View of all events when logged out:
 
-1) see a calendar.
+![Mockup of all events when logged out](images/All_events.logged_out.png)
+<br><br>
 
-2) create events with the following characteristics: 
-   First priority: date, time, title, description.
-   Second priority: location, tags, "hosted by".   
-   Third priority: type of event, max. number of participants, public or private event.
+View of calendar page when logged in:
 
-3) edit created events.
+![Mockup of calendar view when logged in](images/Calendar_view.logged_in.png)
 
-4) delete events.
-
-5) see events in different calendar views: 
-    First priority: monthly.
-    Second priority: weekly, year. 
-    
-6) create a profile for the organization with the following characteristics: 
-    First priority: name of the organization, short description, link to the website, a picture.
-    Second priority: list of events added by the organization.
-
-7) edit the profile of the organization. 
-
-8) delete the profile of the organization.
-  
-9) I also want that only registered organizations have the power to add, edit and delete events from the calendar.
-
-
-## USER STORIES </br>
-As a calendar user I want to be able to...
-
-1) see all the events titles in the calendar: 
-    First priority: monthly.
-    Second priority: weekly, year.
-    
-2) click on the events and see the information.
-
-3) distinguish between the different organizations by different colours.
-
-4) filter the events by: 
-    First priority: organization.
-    Second priority: type of event. 
-
-5) search for events by tags , i.e. "beginners" or programming language.
-
-6) find short information about the organizations and links to their websites.
-
-
-## DEVELOPER STORIES </br>
-As developers we want to..
-
-- use the rails calendar helper instead of whole APIs to be able to learn more.
-
-- add the organizations as admin manually instead of setting up a whole log-in-system.
 
 
 ## Minimum Viable Product (MVP) </br>
@@ -104,10 +119,4 @@ As developers we want to..
 
 6) search for events by tags.
 
-
-## NEXT STEPS </br>
-
-- think about the database structure and make a drawing.
-- 16. April: break first version down into small tasks (tickets). Decide platform for tickets (Trello?, ...). 
-- Celeste wont be in B from 18.4.-8.5.!
-
+...and again, if you want to contribute, go [here](CONTRIBUTORS.md).

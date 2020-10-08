@@ -19,25 +19,37 @@
     %br
     = form.text_area :description, class: 'form-control'
     %br
-  .form-group
-    = form.label("Event begins at")
-    %div{:class => 'input-group date',:id=>'datetimepicker_start_time', 'data-target-input'=>'nearest'}
-      %input{:class => 'form-control datetimepicker',:name => "event[start_time]", :include_blank => true, :id => 'datetimepicker_start_time', 'data-toggle'=>'datetimepicker','data-target'=>'#datetimepicker_start_time'}
-      %div{:class => 'input-group-append','data-target'=>'#datetimepicker_start_time','data-toggle'=>'datetimepicker'}
-        %div{:class => 'input-group-text'}
-          %i{:class => 'fa fa-calendar'}
-  .form-group
-    = form.label("Event ends at")
-    %div{:class => 'input-group date',:id=>'datetimepicker_end_time', 'data-target-input'=>'nearest'}
-      %input{:class => 'form-control datetimepicker',:name => "event[end_time]", :include_blank => true, :id => 'datetimepicker_end_time', 'data-toggle'=>'datetimepicker','data-target'=>'#datetimepicker_end_time'}
-      %div{:class => 'input-group-append','data-target'=>'#datetimepicker_end_time','data-toggle'=>'datetimepicker'}
-        %div{:class => 'input-group-text'}
-          %i{:class => 'fa fa-calendar'}
+  .row
+    .col-sm-3
+      .form-group
+        = form.label("Event begins at")
+        .input-group.date#datetimepicker_start_time{'data-target-input'=>"nearest"}
+          %input.form-control.datetimepicker-input{:name => "event[start_time]",'type'=>"text", 'data-target'=>"#datetimepicker_start_time", :value => @event.start_time ? @event.start_time.strftime('%F %R') : ''}
+          .input-group-append{'data-target'=>"#datetimepicker_start_time", 'data-toggle'=>"datetimepicker"}
+            .input-group-text
+              %i.fa.fa-calendar
+    .col-sm-3
+      .form-group
+        = form.label("Event ends at")   
+        .input-group.date#datetimepicker_end_time{'data-target-input'=>"nearest"}
+          %input.form-control.datetimepicker-input{:name => "event[end_time]",'type'=>"text",'data-target'=>"#datetimepicker_end_time", :value => @event.end_time ? @event.end_time.strftime('%F %R') : ''}
+          .input-group-append{'data-target'=>"#datetimepicker_end_time", 'data-toggle'=>"datetimepicker"}
+            .input-group-text
+              %i.fa.fa-calendar
+
   %p
     = form.submit
+
 :javascript
   $(function () {
-      $('#datetimepicker_start_time').datetimepicker({
-      });
+    $('#datetimepicker_start_time').datetimepicker({
+      format: 'YYYY-MM-DD HH:mm',
+      autoclose: true
+    });
+    $('#datetimepicker_end_time').datetimepicker({
+      format: 'YYYY-MM-DD HH:mm',
+      autoclose: true,
+      useCurrent: false
+    });
   });
 

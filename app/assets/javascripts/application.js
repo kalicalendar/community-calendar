@@ -20,4 +20,3 @@
 //= require moment
 //= require moment-timezone-with-data
 //= require tempusdominus-bootstrap-4.js
-//= require datetimepicker.js

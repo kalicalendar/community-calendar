@@ -1,3 +1,5 @@
+##
+# This class is necessary because there is no calendar without an event
 # frozen_string_literal: true
 
 # No calendar without an event\
