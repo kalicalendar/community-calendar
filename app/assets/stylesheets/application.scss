@@ -29,6 +29,10 @@ body {
   grid-template-columns: 100%;
 }
 
+a {
+  color: black;
+}
+
 .container {
   padding: 1.6rem;
 }
@@ -51,6 +55,32 @@ body {
   background: #F4F4F4;
   padding: 0.25rem 1rem;
 }
+
+.btn-flat.create-event {
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+}
+
+.btn-flat.edit-event {
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #4798f5;
+  transition: background 0.3s ease;
+}
+
+.btn-flat.delete-event {
+  padding: 8px 24px;
+  border-radius: 4px;
+  // background: #4A4A4A;
+  border: 1px solid #838181;
+  transition: background 0.3s ease;
+}
+
+// .btn-flat .a {
+//   color: white;
+// }
 
 .fa.fa-user {
   font-size: 30px;

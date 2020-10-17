@@ -5,13 +5,17 @@
   - events.each do |event|
     %div
       = link_to event.title, event_path(event)
-%p= link_to 'Create new event', new_event_path
+%p.btn.btn-flat.create-event
+  =link_to 'Create new event', new_event_path
 %br
 %h3 List of all events
 %table.table.table-responsive
   - @events.each do |event|
     %tr
       %td= link_to event.title, event_path(event)
-      %td= link_to 'Edit', edit_event_path(event)
-      %td= link_to 'Destroy', event_path(event), method: :delete, data:{confirm: 'Are you sure?'}
-%p= link_to 'Create new event', new_event_path
+      %td.btn.btn-flat.edit-event
+        =link_to 'Edit', edit_event_path(event)
+      %td.btn.btn-flat.delete-event 
+        =link_to 'Delete', event_path(event), method: :delete, data:{confirm: 'Are you sure?'}
+%p.btn.btn-flat.create-event
+  =link_to 'Create new event', new_event_path
