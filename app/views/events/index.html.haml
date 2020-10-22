@@ -5,17 +5,16 @@
   - events.each do |event|
     %div
       = link_to event.title, event_path(event)
-%p.btn.btn-flat.create-event
-  =link_to 'Create new event', new_event_path
+=link_to 'Create new event', new_event_path, :class => 'btn btn-flat create-event'
 %br
 %h3 List of all events
 %table.table.table-responsive
   - @events.each do |event|
     %tr
       %td= link_to event.title, event_path(event)
-      %td.btn.btn-flat.edit-event
-        =link_to 'Edit', edit_event_path(event)
-      %td.btn.btn-flat.delete-event 
-        =link_to 'Delete', event_path(event), method: :delete, data:{confirm: 'Are you sure?'}
-%p.btn.btn-flat.create-event
-  =link_to 'Create new event', new_event_path
+      %td
+        =link_to 'Edit', edit_event_path(event), :class => 'btn btn-flat edit-event'
+      %td
+        =link_to 'Delete', event_path(event), method: :delete, data:{confirm: 'Are you sure?'}, :class => 'btn btn-flat delete-event'
+%div
+  =link_to 'Create new event', new_event_path, :class => 'btn btn-flat create-event'
