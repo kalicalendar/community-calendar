@@ -30,9 +30,9 @@ body {
 }
 
 a {
-  color: black;
+  color: #0D3B66;
     &:hover {
-      color: black;
+      color: #0D3B66;
       text-decoration: none;
     }
 }
@@ -60,35 +60,42 @@ a {
   padding: 0.25rem 1rem;
 }
 
+
 .link-underlined {
   transition: all .2s ease-in-out;
-    &:hover{
-      &:after {
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 0;
-        height: 3px;
-        margin: 5px 0 0;
-        border-radius: 3px;
-        transition-duration: .3s;
-        opacity: 0;
-        transition: all .2s ease-in-out;
-    }
-  }
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.link-underlined::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  margin: 5px 0 0;
+  border-radius: 3px;
+  transition-duration: .3s;
+  opacity: 0;
+  transition: all .2s ease-in-out;
 }
 
 
-.link-underlined-red {
-  &:after {
-    background-color: #fd1015;
-  }
+.link-underlined-yellow::after {
+    background-color: #DEB841;
+}
+
+.link-underlined:hover:after {
+  width: 100%;
+  opacity: 1;
 }
 
 
 .btn {
   margin: 0px;
+  color: #0D3B66;
 }
 
 .btn-flat.create-event {
@@ -99,7 +106,7 @@ a {
   margin: 0;
     &:hover {
         background: #02adaf;
-        color: black;
+        color: #0D3B66;
     }
 }
 
@@ -110,7 +117,7 @@ a {
   transition: background 0.3s ease;
     &:hover {
       background: #e4948b;
-      color: black;
+      color: #0D3B66;
     }
 }
 
@@ -164,6 +171,3 @@ a {
 .footer .fa-heart {
   color: #D23333;
 }
-
-
-

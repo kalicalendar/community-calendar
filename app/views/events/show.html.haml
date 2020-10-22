@@ -6,6 +6,6 @@
         Description: #{@event.description}
       %li
         Time: #{@event.start_time.strftime("%A, %B %d from %I:%M")} - #{@event.end_time.strftime("%I:%M%P")}
-    = link_to 'Edit event', edit_event_path(@event)
-    = link_to 'Back to all events', events_path
+    = link_to 'Edit event', edit_event_path(@event), :class => 'link-underlined link-underlined-yellow'
+    = link_to 'Back to all events', events_path, :class => 'link-underlined link-underlined-yellow'
 
