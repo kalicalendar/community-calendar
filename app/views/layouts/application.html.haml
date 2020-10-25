@@ -11,7 +11,10 @@
     = yield :javascripts
   %body
     = render 'layouts/header'
+    - if notice
+      %p.alert.alert-success= notice
+    - if alert
+      %p.alert.alert-danger= alert
     .container
       = yield
     = render 'layouts/footer'
-    
