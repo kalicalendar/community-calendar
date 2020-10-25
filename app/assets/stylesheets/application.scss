@@ -29,6 +29,14 @@ body {
   grid-template-columns: 100%;
 }
 
+a {
+  color: #0D3B66;
+    &:hover {
+      color: #0D3B66;
+      text-decoration: none;
+    }
+}
+
 .container {
   padding: 1.6rem;
 }
@@ -50,6 +58,78 @@ body {
 .navbar-nav .nav-link {
   background: #F4F4F4;
   padding: 0.25rem 1rem;
+}
+
+
+.link-underlined {
+  transition: all .2s ease-in-out;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.link-underlined::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  margin: 5px 0 0;
+  border-radius: 3px;
+  transition-duration: .3s;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+}
+
+
+.link-underlined-yellow::after {
+    background-color: #DEB841;
+}
+
+.link-underlined:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+
+.btn {
+  margin: 0px;
+  color: #0D3B66;
+}
+
+.btn-flat.create-event {
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #02c7cb;
+  transition: background 0.3s ease;
+  margin: 0px;
+    &:hover {
+        background: #02adaf;
+        color: #0D3B66;
+    }
+}
+
+.btn-flat.edit-event {
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #F7A399;
+  transition: background 0.3s ease;
+    &:hover {
+      background: #e4948b;
+      color: #0D3B66;
+    }
+}
+
+.btn-flat.delete-event {
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: 1px solid #838181;
+  transition: background 0.3s ease;
+  opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
 }
 
 .fa.fa-user {
@@ -91,6 +171,3 @@ body {
 .footer .fa-heart {
   color: #D23333;
 }
-
-
-

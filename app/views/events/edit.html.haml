@@ -1,5 +1,5 @@
 .container
   %h1 Edit your Event!
   = render "form"
-  = link_to 'Back to event page', @event
-  = link_to 'Back to all events', events_path
+  = link_to 'Back to event page', @event, :class => 'link-underlined link-underlined-yellow'
+  = link_to 'Back to all events', events_path, :class => 'link-underlined link-underlined-yellow'
