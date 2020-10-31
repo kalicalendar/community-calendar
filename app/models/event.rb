@@ -8,13 +8,12 @@ class Event < ApplicationRecord
   validate :end_time_is_after_start_time_or_equal
 end
 
-
 private
 
 def end_time_is_after_start_time_or_equal
   return if end_time.blank? || start_time.blank?
 
-  if end_time <= start_time
-    errors.add(:end_time, "cannot be before or qual to the start time") 
-  end 
+  return unless end_time <= start_time
+
+  errors.add(:end_time, 'cannot be before or qual to the start time')
 end
