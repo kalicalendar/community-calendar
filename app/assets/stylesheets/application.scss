@@ -150,6 +150,18 @@ a {
 .fa.fa-user {
   font-size: 30px;
   padding: 5px;
+    &:hover{
+      cursor: pointer;
+      color: black;
+    }
+}
+
+.fa.fa-user.signed-in {
+  color: #02adaf;
+    &:hover {
+      cursor: pointer;
+      color: #02c7cb;
+    }
 }
 
 .calendar-container {
