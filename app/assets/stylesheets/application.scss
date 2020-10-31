@@ -92,6 +92,9 @@ a {
   opacity: 1;
 }
 
+.link-underlined-yellow.hidden {
+  visibility: hidden;
+}
 
 .btn {
   margin: 0px;
@@ -110,6 +113,10 @@ a {
     }
 }
 
+.btn-flat.create-event.hidden {
+  visibility: hidden;
+}
+
 .btn-flat.edit-event {
   padding: 8px 24px;
   border-radius: 4px;
@@ -121,6 +128,10 @@ a {
     }
 }
 
+.btn-flat.edit-event.hidden {
+  visibility: hidden;
+}
+
 .btn-flat.delete-event {
   padding: 8px 24px;
   border-radius: 4px;
@@ -130,6 +141,10 @@ a {
     &:hover {
       opacity: 1;
     }
+}
+
+.btn-flat.delete-event.hidden {
+  visibility: hidden;
 }
 
 .fa.fa-user {
