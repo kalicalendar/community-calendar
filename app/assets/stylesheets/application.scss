@@ -92,7 +92,6 @@ a {
   opacity: 1;
 }
 
-
 .btn {
   margin: 0px;
   color: #0D3B66;
@@ -135,6 +134,18 @@ a {
 .fa.fa-user {
   font-size: 30px;
   padding: 5px;
+    &:hover{
+      cursor: pointer;
+      color: black;
+    }
+}
+
+.fa.fa-user.signed-in {
+  color: #02adaf;
+    &:hover {
+      cursor: pointer;
+      color: #02c7cb;
+    }
 }
 
 .calendar-container {
