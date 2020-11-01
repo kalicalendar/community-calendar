@@ -6,7 +6,7 @@ class EventsController < ApplicationController
   before_action :authenticate_user!, only: [:create]
   
   def index
-      @events = Event.all
+    @events = Event.all
   end
 
   def new
@@ -16,7 +16,7 @@ class EventsController < ApplicationController
   def create
     @event = Event.new(event_params)
 
-   if @event.save
+    if @event.save
       redirect_to @event
     else
       render 'new'
