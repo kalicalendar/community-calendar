@@ -5,7 +5,8 @@
   - events.each do |event|
     %div
       = link_to event.title, event_path(event)
-=link_to 'Create new event', new_event_path, :class => 'btn btn-flat create-event'
+- if user_signed_in?
+  =link_to 'Create new event', new_event_path, :class => 'btn btn-flat create-event'
 %br
 %h3 List of all events
 %table.table.table-responsive
@@ -13,9 +14,12 @@
     %tr
       %td 
         =link_to event.title, event_path(event), :class => 'link-underlined link-underlined-yellow'
-      %td
-        =link_to 'Edit', edit_event_path(event), :class => 'btn btn-flat edit-event'
-      %td
-        =link_to 'Delete', event_path(event), method: :delete, data:{confirm: 'Are you sure?'}, :class => 'btn btn-flat delete-event'
+        - if user_signed_in?
+          %td
+            =link_to 'Edit', edit_event_path(event), :class => 'btn btn-flat edit-event'
+          %td
+            =link_to 'Delete', event_path(event), method: :delete, data:{confirm: 'Are you sure?'}, :class => 'btn btn-flat delete-event'
 %div
-  =link_to 'Create new event', new_event_path, :class => 'btn btn-flat create-event'
+  - if user_signed_in?
+    =link_to 'Create new event', new_event_path, :class => 'btn btn-flat create-event'
+ 
