@@ -1,0 +1,16 @@
+name: Rubocop
+
+on: [push]
+
+jobs:
+  rubocop:
+    name: runner / rubocop
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check out code
+        uses: reviewdog/action-rubocop@v1
+        with:
+          rubocop_version: 0.80.1
+          rubocop_extensions: rubocop-rails rubocop-performance:1.5.1
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
